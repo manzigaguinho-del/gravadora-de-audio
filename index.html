@@ -1,41 +1,19 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gravadora de Áudio</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <div class="recorder-card">
-            <h1>🎙️ Gravadora de Áudio</h1>
-            
-            <div class="visualizer">
-                <canvas id="visualizer"></canvas>
-            </div>
-
-            <div class="controls">
-                <button id="startBtn" class="btn btn-primary">
-                    <span class="icon">●</span> Iniciar Gravação
-                </button>
-                <button id="stopBtn" class="btn btn-danger" disabled>
-                    <span class="icon">■</span> Parar
-                </button>
-                <button id="pauseBtn" class="btn btn-warning" disabled>
-                    <span class="icon">⏸</span> Pausar
-                </button>
-            </div>
-
-            <div class="timer" id="timer">00:00:00</div>
-
-            <div class="recordings">
-                <h2>📋 Minhas Gravações</h2>
-                <ul id="recordingsList"></ul>
-            </div>
+    <div class="main-interface">
+        <img src="gravadora.png" alt="Gravadora" class="interface-image">
+        <div class="controls">
+            <button id="record">Gravar</button>
+            <button id="playback">Reproduzir</button>
         </div>
     </div>
-
     <script src="script.js"></script>
 </body>
 </html>

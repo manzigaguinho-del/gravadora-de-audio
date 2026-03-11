@@ -4,16 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gravadora de Áudio</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
 </head>
 <body>
-    <div class="main-interface">
-        <img src="gravadora.png" alt="Gravadora" class="interface-image">
-        <div class="controls">
-            <button id="record">Gravar</button>
-            <button id="playback">Reproduzir</button>
-        </div>
-    </div>
-    <script src="script.js"></script>
+    <img src="gravadora.png" alt="Gravadora">
+    <audio controls>
+        <source src="audio-file.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
 </body>
 </html>
